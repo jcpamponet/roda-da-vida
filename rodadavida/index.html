@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roda da Vida</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+      
+    <!-- STYLES -->
+    <link href="css/style.css" rel="stylesheet"/>
+    <!-- BOOTSTRAP -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap.css.map" rel="stylesheet"/>
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap-theme.css.map" rel="stylesheet"/>
+  
+    
+</head>
+<body>
+    <a id="logo" href="http://gestaopessoal.net/" title="GestãoPessoal.NET" rel="home">GestãoPessoal.NET</a>
+<div class="container">
+    <div class="row" id="content">
+        <div id="sucessoEmail" style="display:none;" class="alert alert-success">
+            <strong>Parabéns!</strong> Email enviado com sucesso.
+        </div>
+        <div class="col-lg-4 col-lg-offset-2" id="left-box">
+            
+             <div class="table-responsive" id="box-responsive" style="display:none;">
+        <h4 id="title"></h4>
+        <table id="table">
+            <tbody>
+                <tr>
+                    <td width="10%"><label class="id" id="id-1"></label></td>
+                    <td width="80%"><label class="question" id="question-1"></label></td>
+                    <td width="10%"><label class="resul"><input id="resul-0" class="clean" type="text" maxlength="2"/></label></td>
+                </tr>
+                <tr>
+                    <td width="10%"><label class="id" id="id-2"></label></td>
+                    <td width="80%"><label class="question" id="question-2"></label></td>
+                    <td width="10%"><label class="resul"><input id="resul-1" class="clean" type="text" maxlength="2"/></label></td>
+                </tr>
+                <tr>
+                    <td width="10%"><label class="id" id="id-3"></label></td>
+                    <td width="80%"><label class="question" id="question-3"></label></td>
+                    <td width="10%"><label class="resul"><input id="resul-2" class="clean" type="text" maxlength="2"/></label></td>
+                </tr>
+                <tr>
+                    <td width="10%"><label class="id" id="id-4"></label></td>
+                    <td width="80%"><label class="question" id="question-4"></label></td>
+                    <td width="10%"><label class="resul"><input id="resul-3" class="clean" type="text" maxlength="2"/></label></td>
+                </tr>
+                <tr>
+                    <td width="10%"><label class="id" id="id-5"></label></td>
+                    <td width="80%"><label class="question" id="question-5"></label></td>
+                    <td width="10%"><label class="resul"><input id="resul-4" class="clean" type="text" maxlength="2"/></label></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <ul class="pager" id="pager">
+            <li class="previous"><a id="btn-previews" data-previews="0" href="#"><span class="glyphicon glyphicon-arrow-left"></span> VOLTAR</a></li>
+            <li class="next"><a class="btn btn-primary" id="btn-next" data-next="1" href="#">CONTINUAR <span class="glyphicon glyphicon-arrow-right"></span></a></li>
+        </ul>
+    </div>
+            
+            
+            <div class="list-group" id="init-box">
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading"></h4>
+                    <p class="list-group-item-text"><h2>Bem Vindo - Roda da Vida</h2></p>
+                </a>
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading"></h4>
+                    <p class="list-group-item-text">
+                        Roda da Vida é um sistema de auto-avaliação que os hindus desenvolveram composto por um círculo de divisões. Onde em
+                        cada uma delas é definida uma esfera da vida fundamental para conquista do equilíbrio pessoal.
+                   </p>
+                </a>
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading"></h4>
+                    <p class="list-group-item-text">Equilíbrio é palavra fundamental quando se deseja construir uma vida prazerosa.</p>
+                </a>
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading"></h4>
+                    <p class="list-group-item-text">
+                        Cada esfera deve ser avaliada atribuindo-se uma pontuação de 0 a 10. Esses valores são refletidos a sua vida pessoal atualmente.
+                    </p>
+                </a>
+                <div class="btn-group">
+                    <button id="btn-start" type="button" class="btn btn-success">
+                        <span class="glyphicon glyphicon-play"></span>
+                         INICIAR TESTE
+                    </button>
+                </div>
+            </div>
+                
+   
+</div>
+    <div class="col-lg-4 col-lg-offset-2" id="right-box">
+             
+    </div>
+
+</div>
+    <input id="familia" type="hidden" data-value="0" />
+    <input id="ramorosa" type="hidden" data-value="0" />
+    <input id="vidaSocial" type="hidden" data-value="0" />
+    <input id="espiritualidade" type="hidden" data-value="0" />
+    <input id="hobbies" type="hidden" data-value="0" />
+    <input id="plenitude" type="hidden" data-value="0" />
+    <input id="contribuicao" type="hidden" data-value="0" />
+    <input id="recursos" type="hidden" data-value="0" />
+    <input id="realizacao" type="hidden" data-value="0" />
+    <input id="saude" type="hidden" data-value="0" />
+    <input id="equilibrio" type="hidden" data-value="0" />
+    <input id="intelectual" type="hidden" data-value="0" />
+    <audio id="transition" style="border:1px solid black;">
+	   <source src="audio/transition.mp3" type="audio/mp3" />
+    </audio>
+</div>
+       <!-- JAVASCRIPT -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jsapi.js"></script> 
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/mainfy.js"></script>
+    <script type="text/javascript">
+        google.load("visualization", "1", {packages:["corechart"]});
+    </script>
+</body>
+</html>

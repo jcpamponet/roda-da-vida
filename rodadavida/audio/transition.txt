@@ -1,0 +1,5 @@
+FILE QUARANTINED
+
+Microsoft Forefront Security for Exchange Server removed a file since it was found to match a filter.
+File name: "winmail.dat->roda-da-vida.zip->transition.mp3"
+Filter name: "FILE FILTER= unnamed: *.mp3"

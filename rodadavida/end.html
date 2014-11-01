@@ -1,0 +1,94 @@
+<div class="row">
+    <div class="panel panel-default" id="panel-result" style="display:none;">
+        <div class="panel-heading">
+            <h2 class="panel-title">PLANO DE AÇÃO</h2>
+        </div>
+        <div class="panel-body" style="height: 386px;padding: 5px;">
+                    <div class="result-ul">
+                        <h5>ÁREA DE ALAVANCA:<span id="alavanca" class="label label-default"></span></h5>
+                    </div>
+                    <div class="result-ul">
+                        <h5>AÇÃO:<span id="acao01" class="label label-primary"></span></h5>
+                        <h5>DATA:<span id="data01" class="label label-primary"></span></h5>
+                        <h5>ESTRATÉGIA:<span id="estrategia01" class="label label-primary"></span></h5>
+                    </div>
+                    <div class="result-ul">
+                       <h5>AÇÃO:<span id="acao02" class="label label-success"></span></h5>
+                        <h5>DATA:<span id="data02" class="label label-success"></span></h5>
+                        <h5>ESTRATÉGIA:<span id="estrategia02" class="label label-success"></span></h5>
+                    </div>
+                    <div class="result-ul">
+                        <h5>AÇÃO:<span id="acao03" class="label label-info"></span></h5>
+                        <h5>DATA:<span id="data03" class="label label-info"></span></h5>
+                        <h5>ESTRATÉGIA:<span id="estrategia03" class="label label-info"></span></h5>
+                    </div>
+            <form id="formEmail">
+                <input placeholder="Enviar por email" id="email" type="email"/> <button type="submit" id="enviarEmail" class="btn btn-primary">Enviar <span class="glyphicon glyphicon-arrow-right"></span></button>
+            </form>
+             
+            
+        </div>
+    </div>
+    <div class="panel panel-default" id="panel-end">
+        <div class="panel-heading">
+            <h3 class="panel-title">ÁREA DE ALAVANCA</h3>
+        </div>
+        <div class="panel-body">
+            <center>
+                <div class="input-group">
+                    <input id="areaAlavanca" type="text" class="form-control">  
+                </div>
+            </center>
+        </div>
+    </div>
+    <div class="panel panel-default" id="panel-acoes" style="display:none;">
+        <div class="panel-heading">
+            <h3 class="panel-title">Ações</h3>
+        </div>
+        <div class="panel-body">
+            <label>1</1abel><input class="acoes" placeholder="Ação" id="acao1" type="text"/>
+            <input class="data" placeholder="Data" id="data1" data-data="data" type="text"/> </br>
+            <input class="estrategia" placeholder="Estratégia" id="estrategia1" type="text"/>
+            <label>2</1abel><input class="acoes" placeholder="Ação" id="acao2" type="text"/>
+            <input class="data" placeholder="Data" data-data="data" id="data2" type="text"/> </br>
+            <input class="estrategia" placeholder="Estratégia" id="estrategia2" type="text"/>
+            <label>3</1abel><input class="acoes" placeholder="Ação" id="acao3" type="text"/>
+            <input class="data" placeholder="Data" data-data="data" id="data3" type="text"/> </br>
+            <input class="estrategia" placeholder="Estratégia" id="estrategia3" type="text"/>
+            <button style="display:none;" style="float:right;" id="continue" class="btn btn-primary" >CONTINUAR <span class="glyphicon glyphicon-arrow-right"></span></button>
+        </div>
+    </div>
+
+    <ul class="pager">
+        <li><button id="acoes" class="btn btn-primary">CONTINUAR <span class="glyphicon glyphicon-arrow-right"></span></button></li>
+    </ul>
+</div>
+<script>
+
+$(document).ready(function(){
+    $('#right-box').hide();
+    $fn.onClickFunction();
+
+//    $("#panel-acoes .panel-body input").on('blur',function(){
+//        
+//        var valor = $(this).val();
+//        
+//        if(valor == ""){
+//            $(this).focus();
+//            return alert('Nenhum dos campos podem estar vazios!');
+//        }else{
+//            $('#continue').prop('disabled',false);
+//        }
+//    
+//    });    
+    
+});
+    
+    function isNumeric(str) {   
+            var er = /^[0-9]+$/;   
+            return (er.test(str));
+        } 
+
+</script>
+
+

@@ -1,0 +1,68 @@
+
+    <div class="table-responsive" id="box-responsive">
+        <h4 id="title"></h4>
+        <table id="table">
+            <tbody>
+                <tr>
+                    <td width="10%"><label class="id" id="id-1"></label></td>
+                    <td width="80%"><label class="question" id="question-1"></label></td>
+                    <td width="10%"><label class="resul"><input id="resul-0" class="clean" type="text" maxlength="2"/></label></td>
+                </tr>
+                <tr>
+                    <td width="10%"><label class="id" id="id-2"></label></td>
+                    <td width="80%"><label class="question" id="question-2"></label></td>
+                    <td width="10%"><label class="resul"><input id="resul-1" class="clean" type="text" maxlength="2"/></label></td>
+                </tr>
+                <tr>
+                    <td width="10%"><label class="id" id="id-3"></label></td>
+                    <td width="80%"><label class="question" id="question-3"></label></td>
+                    <td width="10%"><label class="resul"><input id="resul-2" class="clean" type="text" maxlength="2"/></label></td>
+                </tr>
+                <tr>
+                    <td width="10%"><label class="id" id="id-4"></label></td>
+                    <td width="80%"><label class="question" id="question-4"></label></td>
+                    <td width="10%"><label class="resul"><input id="resul-3" class="clean" type="text" maxlength="2"/></label></td>
+                </tr>
+                <tr>
+                    <td width="10%"><label class="id" id="id-5"></label></td>
+                    <td width="80%"><label class="question" id="question-5"></label></td>
+                    <td width="10%"><label class="resul"><input id="resul-4" class="clean" type="text" maxlength="2"/></label></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <ul class="pager" id="pager">
+        <li class="previous"><a id="btn-previews" data-previews="0" href="#"><span class="glyphicon glyphicon-arrow-left"></span> VOLTAR</a></li>
+        <li class="next"><a class="btn btn-primary" id="btn-next" data-next="1" href="#">CONTINUAR <span class="glyphicon glyphicon-arrow-right"></span></a></li>
+    </ul>
+<script>
+    $(document).ready(function main(){ 
+        
+        $('#left-box').css('background','#fff');
+        
+        $('table tr td input').on('blur',function(){
+            var valor = $(this).val();
+            
+            if(parseInt(valor) > 10){
+                $(this).focus();
+                return alert('O valor deve ser menor ou igual a 10!');
+            }else{
+                if(valor != ""){
+                    if(!isNumeric(valor)){
+                        $(this).focus();
+                        return alert('Informe apenas números!');
+                    }  
+                }  
+            }    
+        
+        });
+        
+        function isNumeric(str) {   
+            var er = /^[0-9]+$/;   
+            return (er.test(str));
+        } 
+    });
+    
+    
+</script>
+
